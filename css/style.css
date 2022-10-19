@@ -154,7 +154,7 @@ h6 {
 .header {
   background: #fff;
   position: fixed;
-  z-index: 99;
+  z-index: 6;
   width: 100%;
   top: 0;
 }
@@ -1508,6 +1508,16 @@ p.advantage_title_last {
   padding-bottom: 10px;
 }
 
+.review_btm {
+  position: absolute;
+  bottom: 30px;
+}
+
+.review_cnt {
+  padding-bottom: 70px;
+  position: relative;
+}
+
 .review_link {
   font-family: "Jost";
   font-style: normal;
@@ -1866,6 +1876,1280 @@ label.type {
 
 .hidden_radio:checked + .type .radio {
   background: #424B75;
+}
+
+.popup_example {
+  position: fixed;
+  width: calc(100% - 15px);
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 6px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  background: white;
+  display: none;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.popup_overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 9;
+  display: none;
+}
+
+.close_popup {
+  position: absolute;
+  right: 32px;
+  top: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.route_popup {
+  position: fixed;
+  width: calc(100% - 15px);
+  max-width: 794px;
+  border-radius: 6px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  background: white;
+  display: none;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.route_popup_from,
+.route_popup_down {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #151515;
+}
+
+.route_popup_number {
+  padding: 0 50px 30px;
+}
+
+.route_popup_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 18px;
+  padding-top: 58px;
+  padding-left: 50px;
+}
+
+.departure_address {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #151515;
+  padding: 0 50px;
+}
+
+.route_popup_icon {
+  padding: 0 20px;
+}
+
+.number_bus {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 190%;
+  color: #FFFFFF;
+  background: #424B75;
+  border-radius: 4px;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+}
+
+.popup_bus_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #151515;
+  padding-bottom: 8px;
+}
+
+.route_popup_adress {
+  background: #F5F7F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  padding: 27px 0 21px;
+}
+
+.arrival_address {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #151515;
+  left: 50%;
+  position: absolute;
+}
+
+.route_popup_cart {
+  padding-top: 15px;
+}
+
+.timetable_route_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 190%;
+  color: #151515;
+}
+
+li.timetable_week_list {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+}
+
+.timetable_route_popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  position: relative;
+  padding: 21px 50px 16px;
+}
+
+.timetable_route_week {
+  width: 50%;
+}
+
+.price_popup_time_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #151515;
+}
+
+.price_popup_time_cnt {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+  width: 50%;
+}
+
+.price_popup_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+}
+
+.ticket_price_popup {
+  margin: 0 50px;
+  border-top: 1px solid #DFDFDF;
+}
+
+.ticket_price_last {
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.breadcrumbs_block {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #848484;
+}
+
+.breadcrumbs_span {
+  padding: 0 15px 0 10px;
+}
+
+.breadcrumbs_block {
+  margin-top: 15px;
+}
+
+.searching_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #151515;
+  padding-right: 25px;
+}
+
+.direction_date {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #000000;
+  padding-left: 25px;
+}
+
+.searching_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 52px;
+}
+
+.searching_title_arrow {
+  padding-right: 25px;
+}
+
+.searching_cart_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 180%;
+  color: #000000;
+  padding-top: 36px;
+  padding-bottom: 18px;
+}
+
+.selected:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/img/icons/selected_icon.svg) no-repeat;
+  position: absolute;
+  right: 0;
+  margin: 24px 36px;
+}
+
+.directions_cart {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #000000;
+  margin-right: 5px;
+}
+
+span.directions_cart_span {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.cart_hotel {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.directions_cart_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 46px 36px 0;
+}
+
+.directions_ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart_time {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.cart_date {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.directions_cart_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 13px 36px 32px 36px;
+}
+
+.directions_ctn_time:last-child {
+  text-align: end;
+}
+
+.directions_ctn_time_icon {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+  width: 100%;
+  background-image: url(/img/icons/line_direction.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.clock_time_icon {
+  max-width: 115px;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffffff;
+  margin: 0 auto;
+  top: 5px;
+}
+
+.select_clock {
+  max-width: 115px;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F5F7F9;
+  margin: 0 auto;
+  top: 5px;
+}
+
+.icon_time {
+  margin-right: 7px;
+}
+
+.directions_ctn_time {
+  width: 15%;
+}
+
+.directions_cart_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 36px;
+  border-top: 2px solid #424B75;
+  padding: 20px 0 23px 0;
+}
+
+.amount_men_cart {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #202020;
+  background: #D2EBF4;
+  border-radius: 200px;
+  width: 85px;
+  height: 35px;
+  text-align: center;
+}
+
+img.amount_men_icon {
+  padding: 9px 5px;
+}
+
+.cart_price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 117%;
+  color: #424B75;
+  margin-left: auto;
+  padding-right: 28px;
+}
+
+.cart_button_selected {
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  color: #424B75;
+  width: 100%;
+  height: 53px;
+  padding: 0 65px;
+}
+
+.cart_button_btn {
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+  background: #424B75;
+  width: 100%;
+  height: 53px;
+  padding: 0 65px;
+}
+
+.searching_cart_menu {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  width: 37%;
+  max-height: 100%;
+  margin-left: 21px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.cart_menu_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  color: #000000;
+}
+
+.cart_menu_date {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  color: #000000;
+}
+
+.searching_cart__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 92px;
+}
+
+.searching_cart_block {
+  width: 75%;
+}
+
+.cart_menu_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 46px 30px 30px 30px;
+}
+
+.cart_menu_city {
+  padding: 0 30px;
+}
+
+.arrow_menu_block {
+  padding: 10px 30px;
+}
+
+.cart_adult,
+.quantity_adult,
+.price_adult,
+.cart_child,
+.quantity_child,
+.price_child {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.cart_menu_price_adult,
+.cart_menu_price_child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart_menu_price {
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  padding: 21px 0;
+  margin: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart_total_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 15px;
+}
+
+.price__button-cart {
+  background: #EC1C24;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  height: 53px;
+  max-width: 100%;
+  padding: 0 110px;
+}
+
+li.cart_menu_list {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.total_price_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.total_price_date {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: right;
+  color: #000000;
+}
+
+.price__actions-cart {
+  padding: 39px 0 51px;
+  text-align: center;
+}
+
+.cart_menu_bottom {
+  padding-top: 15px;
+}
+
+.searching_cart {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  margin-bottom: 19px;
+}
+
+.selected {
+  background: #F5F7F9;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  position: relative;
+}
+
+.route_title__container {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #151515;
+  padding: 52px 0 23px 0;
+}
+
+.route_table_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #151515;
+  padding-top: 55px;
+  padding-bottom: 31px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.number_route {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 190%;
+  color: #000000;
+  background: #F5F7F9;
+  border-radius: 4px;
+  height: 23px;
+  width: 44px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.title_route {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #424B75;
+}
+
+.route_table__container {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.route_table__container:last-child {
+  margin-bottom: 65px;
+}
+
+.route_link_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+}
+
+.route_number_cnt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  color: #000000;
+  margin-right: 45px;
+}
+
+.route_title_cnt {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 190%;
+  color: #000000;
+}
+
+.route_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #DFDFDF;
+  max-width: 100%;
+}
+
+.route_column {
+  padding: 0;
+}
+
+.directory_table {
+  padding: 0 48px;
+}
+
+.route_table_link {
+  padding: 36px 37px 48px 37px;
+}
+
+.route_link_column {
+  padding-top: 14px;
+}
+
+.passengers_title__container {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #151515;
+  padding-top: 52px;
+  padding-bottom: 36px;
+}
+
+.passengers_left__container {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 0;
+}
+
+.passengers_left_phone_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-left: auto;
+}
+
+.passengers_left_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.passengers_left_phone {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #131313;
+}
+
+.passengers_left_desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.passengers_left_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #DFDFDF;
+  padding-bottom: 20px;
+}
+
+.passengers_left_block {
+  padding: 36px 28px 0 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  padding-bottom: 64px;
+}
+
+.passengers_left_photo {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.passengers_left_photo_blc {
+  width: 43%;
+  padding: 10px 0 10px 18px;
+}
+
+.passengers_right_phone_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-left: auto;
+}
+
+.passengers_right_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.passengers_right_phone {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #131313;
+}
+
+.passengers_right_desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.passengers_right_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #DFDFDF;
+  padding-bottom: 20px;
+}
+
+.passengers_right_block {
+  padding: 36px 28px 0 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  padding-bottom: 64px;
+}
+
+.passengers_right_photo {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.passengers_right_photo_blc {
+  width: 43%;
+  padding: 10px 18px 10px 0;
+}
+
+.passengers_right__container {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 0;
+}
+
+.passengers_bottom {
+  margin-bottom: 30px;
+}
+
+.convenience_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #151515;
+  padding: 75px 0 44px;
+}
+
+.convenience_block_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000042;
+  padding-bottom: 10px;
+}
+
+.convenience_block_desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.convenience {
+  background: #ffffff;
+  margin-top: 60px;
+}
+
+.convenience_cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.convenience_block {
+  padding: 0 20px 35px;
+}
+
+.convenience_cnt__container {
+  padding-bottom: 56px;
+}
+
+img.pasengers_flag {
+  padding-left: 9px;
+}
+
+.carpark_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #151515;
+  padding: 52px 0 23px;
+}
+
+.carpark_desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+  padding-bottom: 49px;
+}
+
+.carpark_block {
+  background: #ffffff;
+}
+
+.carpark_cart_photo_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 89%;
+}
+
+.carpark_cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 86px;
+  padding-bottom: 20px;
+}
+
+.carpark_cart_img {
+  background: #424B75;
+  padding: 7px;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+}
+
+.carpark_cart_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #151515;
+  padding-top: 40px;
+}
+
+.carpark_cart_desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+  padding-top: 27px;
+  padding-bottom: 35px;
+}
+
+.carpark_cart_seats {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 190%;
+  color: #151515;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.carpark_cart_photo {
+  max-width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  padding-right: 20px;
+}
+
+.carpark_cart_block {
+  width: 86%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carpark_cart_icons {
+  padding-top: 21px;
+}
+
+.carpark_cart_last {
+  padding-bottom: 86px;
+}
+
+.carpark_cart_revers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.cart_photo_revers {
+  max-width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  padding-right: 20px;
+}
+
+.carpark_cart_revers_block {
+  width: 86%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
+}
+
+.contact_maps iframe {
+  width: 100%;
+  height: 419px;
+}
+
+.contact_maps {
+  padding-top: 16px;
 }
 
 .swiper {
@@ -2771,3 +4055,512 @@ button.swiper-pagination-bullet {
     scroll-behavior: smooth;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!
+ * Bootstrap Reboot v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+
+ */
+:root {
+  --bs-blue: #ffffff;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #ffffff;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box
+}
+
+@media (prefers-reduced-motion:no-preference) {
+  :root {
+    scroll-behavior: smooth
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: .25
+}
+
+hr:not([size]) {
+  height: 1px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 500;
+  line-height: 1.2
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw)
+}
+
+@media (min-width:1200px) {
+  h1 {
+    font-size: 2.5rem
+  }
+}
+
+h2 {
+  font-size: calc(1.325rem + .9vw)
+}
+
+@media (min-width:1200px) {
+  h2 {
+    font-size: 2rem
+  }
+}
+
+h3 {
+  font-size: calc(1.3rem + .6vw)
+}
+
+@media (min-width:1200px) {
+  h3 {
+    font-size: 1.75rem
+  }
+}
+
+h4 {
+  font-size: calc(1.275rem + .3vw)
+}
+
+@media (min-width:1200px) {
+  h4 {
+    font-size: 1.5rem
+  }
+}
+
+h5 {
+  font-size: 1.25rem
+}
+
+h6 {
+  font-size: 1rem
+}
+
+p {
+  margin-top: auto;
+  margin-bottom: auto
+}
+
+abbr[data-bs-original-title],
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit
+}
+
+ol,
+ul {
+  padding-left: 0
+}
+
+dl,
+ol,
+ul {
+  margin-top: auto;
+  margin-bottom: auto
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: auto
+}
+
+dt {
+  font-weight: 700
+}
+
+dd {
+  margin-bottom: auto;
+  margin-left: 0
+}
+
+blockquote {
+  margin: 0 0 1rem
+}
+
+b,
+strong {
+  font-weight: bolder
+}
+
+small {
+  font-size: .875em
+}
+
+mark {
+  padding: .2em;
+  background-color: #fcf8e3
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: .75em;
+  line-height: 0;
+  vertical-align: baseline
+}
+
+sub {
+  bottom: -.25em
+}
+
+sup {
+  top: -.5em
+}
+
+a {
+  color: inherit;
+  text-decoration: underline
+}
+
+a:hover {
+  color: inherit;
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--bs-font-monospace);
+  font-size: 1em;
+  direction: ltr;
+  unicode-bidi: bidi-override
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  font-size: .875em
+}
+
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal
+}
+
+code {
+  font-size: .875em;
+  color: #d63384;
+  word-wrap: break-word
+}
+
+a>code {
+  color: inherit
+}
+
+kbd {
+  padding: .2rem .4rem;
+  font-size: .875em;
+  color: #fff;
+  background-color: #212529;
+  border-radius: .2rem
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 1em;
+  font-weight: 700
+}
+
+figure {
+  margin: 0 0 1rem
+}
+
+img,
+svg {
+  vertical-align: middle
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse
+}
+
+caption {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  color: #6c757d;
+  text-align: left
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0
+}
+
+label {
+  display: inline-block
+}
+
+button {
+  border-radius: 0
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit
+}
+
+button,
+select {
+  text-transform: none
+}
+
+[role=button] {
+  cursor: pointer
+}
+
+select {
+  word-wrap: normal
+}
+
+select:disabled {
+  opacity: 1
+}
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none
+}
+
+textarea {
+  resize: vertical
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+
+legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: calc(1.275rem + .3vw);
+  line-height: inherit
+}
+
+@media (min-width:1200px) {
+  legend {
+    font-size: 1.5rem
+  }
+}
+
+legend+* {
+  clear: left
+}
+
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-year-field {
+  padding: 0
+}
+
+::-webkit-inner-spin-button {
+  height: auto
+}
+
+[type=search] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0
+}
+
+::-webkit-file-upload-button {
+  font: inherit
+}
+
+::file-selector-button {
+  font: inherit
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button
+}
+
+output {
+  display: inline-block
+}
+
+iframe {
+  border: 0
+}
+
+summary {
+  display: list-item;
+  cursor: pointer
+}
+
+progress {
+  vertical-align: baseline
+}
+
+[hidden] {
+  display: none !important
+}
+
+/*# sourceMappingURL=bootstrap-reboot.min.css.map */
