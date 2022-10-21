@@ -1,576 +1,977 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <title>Главная</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <style>body{opacity: 0;}</style> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20221021101917" />
 
-<head>
-	<title>Главная</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221021101917">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap&_v=20221021151656"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;900&display=swap&_v=20221021151656"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css?_v=20221021101917"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-reboot.min.css?_v=20221021151656"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap&_v=20221021151656" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;900&display=swap&_v=20221021151656" rel="stylesheet">
-	<link rel="shortcut icon" href="favicon.ico">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css?_v=20221021101917" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<link rel="stylesheet" href="css/bootstrap-reboot.min.css?_v=20221021151656">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__actions">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <p>Телефон для связи</p>
+                <a href="tel:+37378595959" class="menu__link__header"
+                  >+373 78 59 59 59</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link__header"
+                  ><img src="img/icons/viber.svg" alt=""
+                /></a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link__header"
+                  ><img src="img/icons/whatsap.svg" alt=""
+                /></a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link__header"
+                  ><img src="img/icons/telegram.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+            <div class="menu__lang">
+              <ul class="menu__lang__list">
+                <li class="menu__lang__item">
+                  <a href="" class="menu__link__header"
+                    ><img src="img/icons/md.svg" alt=""
+                  /></a>
+                </li>
+                <li class="menu__lang__item">
+                  <a href="" class="menu__link__header"
+                    ><img src="img/icons/rus.svg" alt=""
+                  /></a>
+                </li>
+                <li class="menu__lang__item">
+                  <a href="" class="menu__link__header"
+                    ><img src="img/icons/eng.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__border"></div>
+        <div class="header__container">
+          <div class="header__menu-top menu-top">
+            <a href="/" class="header__logo"
+              ><img src="img/icons/logo.svg" alt=""
+            /></a>
+            <nav class="menu-top__body">
+              <ul class="menu-top__list">
+                <li class="menu-top__item">
+                  <a href="https://serg-svy.github.io/sky_app/route.html" class="menu-top__link">О компании</a>
+                </li>
+                <li class="menu-top__item">
+                  <a
+                    href="https://serg-svy.github.io/sky_app/searching.html"
+                    class="menu-top__link"
+                    >Направления</a
+                  >
+                </li>
+                <li class="menu-top__item">
+                  <a
+                    href="https://serg-svy.github.io/sky_app/passengers.html"
+                    class="menu-top__link"
+                    >Пассажиры</a
+                  >
+                </li>
+                <li class="menu-top__item">
+                  <a href="https://serg-svy.github.io/sky_app/route.html" class="menu-top__link">Посылки</a>
+                </li>
+                <li class="menu-top__item">
+                  <a
+                    href="https://serg-svy.github.io/sky_app/carpark.html"
+                    class="menu-top__link"
+                    >Автопарк</a
+                  >
+                </li>
+                <li class="menu-top__item">
+                  <a
+                    href="https://serg-svy.github.io/sky_app/contact.html"
+                    class="menu-top__link"
+                  >
+                    Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="header__actions-cart">
+              <button
+                type="button"
+                class="header__actions-user user"
+                onclick="popup()"
+              >
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+          <button type="button" class="menu__icon-top icon-menu">
+            <span></span>
+          </button>
+        </div>
+      </header>
+      <main class="page">
+        <!--слайдер под шапкой -->
+        <div class="top-slider swiper">
+          <!-- Двигающееся часть слайдера -->
+          <div class="swiper-wrapper">
+            <!-- Слайд -->
+            <div class="slide swiper-slide">
+              <div class="top-slider__img">
+                <picture
+                  ><source srcset="img/slider/bord.webp" type="image/webp" />
+                  <img src="img/slider/bord.jpg" alt=""
+                /></picture>
+              </div>
+              <div class="slide-info__container">
+                <p class="slide-block">Кишинев - Франция</p>
+                <p class="slide-desc">Ежедневные Автобусные Рейсы</p>
+                <div class="slider_link_btn">
+                  <a href="#" class="slide-link">Call to action</a>
+                  <img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <div class="top-slider__img">
+                <picture
+                  ><source srcset="img/slider/bord.webp" type="image/webp" />
+                  <img src="img/slider/bord.jpg" alt=""
+                /></picture>
+              </div>
+              <div class="slide-info__container">
+                <p class="slide-block">Кишинев - Франция</p>
+                <p class="slide-desc">Ежедневные Автобусные Рейсы</p>
+                <div class="slider_link_btn">
+                  <a href="#" class="slide-link">Call to action</a>
+                  <img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <div class="top-slider__img">
+                <picture
+                  ><source srcset="img/slider/bord.webp" type="image/webp" />
+                  <img src="img/slider/bord.jpg" alt=""
+                /></picture>
+              </div>
+              <div class="slide-info__container">
+                <p class="slide-block">Кишинев - Франция</p>
+                <p class="slide-desc">Ежедневные Автобусные Рейсы</p>
+                <div class="slider_link_btn">
+                  <a href="#" class="slide-link">Call to action</a>
+                  <img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Если нужна пагинация -->
+          <div class="swiper-pagination pag__container"></div>
+        </div>
+        <!--форма заказа -->
+        <div class="booking-form__container">
+          <form class="booking-form" action="" id="bookingDetails">
+            <div class="form__top">
+              <div class="text-left">Бронирование Билетов Онлайн</div>
+              <div class="trip-types d-sm-flex">
+                <input
+                  type="radio"
+                  checked
+                  class="form-check-input hidden_radio"
+                  name="trip-types"
+                  value="Return"
+                  id="tour"
+                />
 
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<div class="header__actions">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<p>Телефон для связи</p><a href="tel:+37378595959" class="menu__link__header">+373 78 59 59 59</a>
-						</li>
-						<li class="menu__item"><a href="" class="menu__link__header"><img src="img/icons/viber.svg" alt=""></a></li>
-						<li class="menu__item"><a href="" class="menu__link__header"><img src="img/icons/whatsap.svg" alt=""></a></li>
-						<li class="menu__item"><a href="" class="menu__link__header"><img src="img/icons/telegram.svg" alt=""></a></li>
-					</ul>
-					<div class="menu__lang">
-						<ul class="menu__lang__list">
-							<li class="menu__lang__item"><a href="" class="menu__link__header"><img src="img/icons/md.svg" alt=""></a></li>
-							<li class="menu__lang__item"><a href="" class="menu__link__header"><img src="img/icons/rus.svg" alt=""></a></li>
-							<li class="menu__lang__item"><a href="" class="menu__link__header"><img src="img/icons/eng.svg" alt=""></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="header__border"></div>
-			<div class="header__container">
-				<div class="header__menu-top menu-top">
-					<a href="/" class="header__logo"><img src="img/icons/logo.svg" alt=""></a>
-					<nav class="menu-top__body">
-						<ul class="menu-top__list">
-							<li class="menu-top__item"><a href="" class="menu-top__link">О компании</a></li>
-							<li class="menu-top__item"><a href="" class="menu-top__link">Направления</a></li>
-							<li class="menu-top__item"><a href="" class="menu-top__link">Пассажиры</a></li>
-							<li class="menu-top__item"><a href="" class="menu-top__link">Посылки</a></li>
-							<li class="menu-top__item"><a href="" class="menu-top__link">Автопарк</a></li>
-							<li class="menu-top__item"><a href="" class="menu-top__link"> Контакты</a></li>
-						</ul>
-					</nav>
-					<div class="header__actions-cart">
-						<button type="button" class="header__actions-user user" onclick="popup()">Заказать звонок</button>
-					</div>
-				</div>
-				<button type="button" class="menu__icon-top icon-menu"><span></span></button>
-			</div>
-		</header>
-		<main class="page">
-			<!--слайдер под шапкой -->
-			<div class="top-slider swiper">
-				<!-- Двигающееся часть слайдера -->
-				<div class="swiper-wrapper ">
-					<!-- Слайд -->
-					<div class="slide swiper-slide">
-						<div class="top-slider__img">
-							<picture><source srcset="img/slider/bord.webp" type="image/webp"><img src="img/slider/bord.jpg" alt=""></picture>
-						</div>
-						<div class="slide-info__container">
-							<p class="slide-block">Кишинев - Франция</p>
-							<p class="slide-desc">Ежедневные Автобусные Рейсы</p>
-							<div class="slider_link_btn">
-								<a href="#" class="slide-link">Call to
-									action</a>
-								<img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
+                <label for="tour" class="type">
+                  <span class="radio"></span>
+                  Тур
+                </label>
 
-					</div>
-					<div class="slide swiper-slide">
-						<div class="top-slider__img">
-							<picture><source srcset="img/slider/bord.webp" type="image/webp"><img src="img/slider/bord.jpg" alt=""></picture>
-						</div>
-						<div class="slide-info__container">
-							<p class="slide-block">Кишинев - Франция</p>
-							<p class="slide-desc">Ежедневные Автобусные Рейсы</p>
-							<div class="slider_link_btn">
-								<a href="#" class="slide-link">Call to
-									action</a>
-								<img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
+                <input
+                  type="radio"
+                  class="form-check-input hidden_radio"
+                  name="trip-types"
+                  value="One Way"
+                  id="retour"
+                />
 
-					</div>
-					<div class="slide swiper-slide">
-						<div class="top-slider__img">
-							<picture><source srcset="img/slider/bord.webp" type="image/webp"><img src="img/slider/bord.jpg" alt=""></picture>
-						</div>
-						<div class="slide-info__container">
-							<p class="slide-block">Кишинев - Франция</p>
-							<p class="slide-desc">Ежедневные Автобусные Рейсы</p>
-							<div class="slider_link_btn">
-								<a href="#" class="slide-link">Call to
-									action</a>
-								<img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<!-- Если нужна пагинация -->
-				<div class="swiper-pagination pag__container"></div>
-			</div>
-			<!--форма заказа -->
-			<div class="booking-form__container">
-				<form class="booking-form" action="" id="bookingDetails">
-					<div class="form__top">
-						<div class="text-left">Бронирование Билетов Онлайн</div>
-						<div class="trip-types d-sm-flex">
-
-							<input type="radio" checked class="form-check-input hidden_radio" name="trip-types" value="Return" id="tour">
-
-							<label for="tour" class="type">
-								<span class="radio"></span>
-								Тур
-							</label>
-
-
-
-							<input type="radio" class="form-check-input hidden_radio" name="trip-types" value="One Way" id="retour">
-
-							<label for="retour" class="type">
-								<span class="radio"></span>
-								Ретур
-							</label>
-						</div>
-					</div>
-					<div class="single-destination">
-						<div class="trip-details destination-details">
-							<div class="form-group from">
-								<input class="inputText_from inputText" name="from" type="text" placeholder="Город отправления">
-							</div>
-							<div class="form-group from">
-								<input class="inputText_to inputText" name="to" type="text" placeholder="Город назначения">
-							</div>
-							<div class="form-group from_date">
-								<input class="inputText_date inputText" name="depart" type="text" placeholder="Дата">
-							</div>
-							<div class="form-group from_men">
-								<input class="inputText_men inputText" name="return" type="text" placeholder="1 человек">
-							</div>
-							<div class="form-group btn_form-group">
-								<button class="btn_form " id="bookingDetailsSubmit">Искать</button>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="direction__container">
-				<p class="direction_title">Популярные направления из Кишинева</p>
-				<p class="direction_span">Lorem Ipsum is simply dummy text of the printing </p>
-				<div class="direction_cart_item row">
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">80<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/parig.webp" type="image/webp"><img src="img/upload/parig.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Париж</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">110<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/nicca.webp" type="image/webp"><img src="img/upload/nicca.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Ницца</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">203<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/monpelie.webp" type="image/webp"><img src="img/upload/monpelie.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Монпелье</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">59<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/nant.webp" type="image/webp"><img src="img/upload/nant.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Нант</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">80<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/parig.webp" type="image/webp"><img src="img/upload/parig.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Париж</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">110<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/nicca.webp" type="image/webp"><img src="img/upload/nicca.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Ницца</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">203<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/monpelie.webp" type="image/webp"><img src="img/upload/monpelie.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Монпелье</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">59<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/nant.webp" type="image/webp"><img src="img/upload/nant.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Нант</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">80<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/parig.webp" type="image/webp"><img src="img/upload/parig.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Париж</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">110<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/nicca.webp" type="image/webp"><img src="img/upload/nicca.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Ницца</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">203<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/monpelie.webp" type="image/webp"><img src="img/upload/monpelie.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Монпелье</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
-						<div class="img_cart_catalog">
-							<div class="body-price">59<sup><small>€</small></sup>
-							</div>
-							<a href=""><picture><source srcset="img/upload/nant.webp" type="image/webp"><img src="img/upload/nant.png" alt=""></picture></a>
-						</div>
-						<div class="cart_catalog_block">
-							<a href="">
-								<p class="cart_catalog_desc">Нант</p>
-							</a>
-							<div class="cart_link_btn">
-								<a href="#" class="cart-link">Заказать</a><img src="img/icons/arrow_link.svg" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="all_directions__container">
-				<p class="all_directions_title">Все Направления</p>
-				<div class="all_directions_cnt">
-					<div class="all_directions_list_block">
-						<ul class="all_directions_list">
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Ален</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Амберг</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Амстердам</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Ансбах</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Ахен</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Байройт</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Бамберг</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Бельцы</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Бельцы</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Ватра Дорней</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Брауншвейг</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Гумполец</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Карловы Вары</a></li>
-								<li class="all_directions_item"><a class="all_directions_tab" href="">Биоград-на-Мору</a></li>
-						</ul>
-						<ul class="all_directions_list">
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ален</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Амберг</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Амстердам</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ансбах</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ахен</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Байройт</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Бамберг</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Бельцы</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Бельцы</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ватра Дорней</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Брауншвейг</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Гумполец</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Карловы Вары</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Биоград-на-Мору</a></li>
-						</ul>
-						<ul class="all_directions_list">
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ален</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Амберг</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Амстердам</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ансбах</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ахен</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Байройт</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Бамберг</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Бельцы</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Бельцы</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ватра Дорней</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Брауншвейг</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Гумполец</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Карловы Вары</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Биоград-на-Мору</a></li>
-						</ul>
-						<ul class="all_directions_list">
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ален</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Амберг</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Амстердам</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ансбах</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ахен</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Байройт</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Бамберг</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Бельцы</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Бельцы</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Ватра Дорней</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Брауншвейг</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Гумполец</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Карловы Вары</a></li>
-							<li class="all_directions_item"><a class="all_directions_tab" href="">Биоград-на-Мору</a></li>
-						</ul>
-					</div>
-					<div class="all_directions_cart">
-						<picture><source srcset="img/upload/cart_home.webp" type="image/webp"><img src="img/upload/cart_home.png" alt=""></picture>
-					</div>
-				</div>
-				<div class="all_directions_link">
-					<a href="">Показать больше направлений</a><img src="img/icons/arrow_red.svg" alt="">
-				</div>
-			</div>
-			<div class="cooperation">
-				<div class="cooperation__container">
-					<div class="cooperation_cnt">
-						<p class="cooperation__title">Преимущества сотрудничества</p>
-						<p class="cooperation__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-					</div>
-					<div class="advantage_cnt">
-						<div class="advantage_block">
-							<img src="img/icons/cooperation.svg" alt="" class="advantage_icon">
-							<p class="advantage_title">Уверенность в
-								исправности
-								транспортных средств!</p>
-						</div>
-						<div class="advantage_block">
-							<img src="img/icons/cooperation.svg" alt="" class="advantage_icon">
-							<p class="advantage_title">Транспорт всегда приезжает вовремя!</p>
-						</div>
-						<div class="advantage_block">
-							<img src="img/icons/cooperation.svg" alt="" class="advantage_icon">
-							<p class="advantage_title_last">Четко сформированный маршрут</p>
-						</div>
-					</div>
-					<div class="review_slider  swiper bottom-slider">
-						<div class=" review-wrapper swiper-wrapper">
-							<div class="bottom__slide swiper-slide review-slide">
-								<div class="review_photo">
-									<picture><source srcset="img/upload/review.webp" type="image/webp"><img src="img/upload/review.png" alt=""></picture>
-								</div>
-								<div class="review_cnt">
-									<div class="review_title">Виктор Урсу</div>
-									<div class="review_desc">Все было отлично! Владимир очень ответственно подошёл к делу, приехал раньше оговоренного времени на 20 минут по пробкам из Москвы в область. Машина чистая, комфортная. Очень благодарен Владимиру, рекомендую.</div>
-									<div class="review_btm">
-										<a href="" class="review_link">Читать весь отзыв</a><img src="" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="bottom__slide swiper-slide review-slide">
-								<div class="review_photo">
-									<picture><source srcset="img/upload/review.webp" type="image/webp"><img src="img/upload/review.png" alt=""></picture>
-								</div>
-								<div class="review_cnt">
-									<div class="review_title">Виктор Урсу</div>
-									<div class="review_desc">Все было отлично! Владимир очень ответственно подошёл к делу, приехал раньше оговоренного времени на 20 минут по пробкам из Москвы в область. Машина чистая, комфортная. Очень благодарен Владимиру, рекомендую.</div>
-									<div class="review_btm">
-										<a href="" class="review_link">Читать весь отзыв</a><img src="" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="bottom__slide swiper-slide review-slide">
-								<div class="review_photo">
-									<picture><source srcset="img/upload/review.webp" type="image/webp"><img src="img/upload/review.png" alt=""></picture>
-								</div>
-								<div class="review_cnt">
-									<div class="review_title">Виктор Урсу</div>
-									<div class="review_desc">Все было отлично! Владимир очень ответственно подошёл к делу, приехал раньше оговоренного времени на 20 минут по пробкам из Москвы в область. Машина чистая, комфортная. Очень благодарен Владимиру, рекомендую.</div>
-									<div class="review_btm">
-										<a href="" class="review_link">Читать весь отзыв</a><img src="" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="bottom__slide swiper-slide review-slide">
-								<div class="review_photo">
-									<picture><source srcset="img/upload/review.webp" type="image/webp"><img src="img/upload/review.png" alt=""></picture>
-								</div>
-								<div class="review_cnt">
-									<div class="review_title">Виктор Урсу</div>
-									<div class="review_desc">Все было отлично! Владимир очень ответственно подошёл к делу, приехал раньше оговоренного времени на 20 минут по пробкам из Москвы в область. Машина чистая, комфортная. Очень благодарен Владимиру, рекомендую.</div>
-									<div class="review_btm">
-										<a href="" class="review_link">Читать весь отзыв</a><img src="" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- стрелки -->
-					<div class="review-slider-arrows">
-						<div class="review-slider-arrows__container">
-							<button type="button" class="bottom-slider-prev"></button>
-							<button type="button" class="bottom-slider-next"></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="footer__container">
-				<div class="footer__top">
-					<div class="footer__top-contacts contacts">
-						<div class="contacts-address_footer">
-							<p> мун. Кишинэу, бульвар Константин</p>
-							<p>Негруцци, N 7, оф. 255</p>
-						</div>
-					</div>
-					<div class="footer__information-menu ">
-						<nav class="menu__body__footer">
-							<ul class="menu__list__footer">
-								<li class="menu__item__footer"><a href="">О компании </a></li>
-								<li class="menu__item__footer"><a href="">Направления</a></li>
-								<li class="menu__item__footer"><a href="">Пассажиры</a></li>
-								<li class="menu__item__footer"><a href="">Посылки</a></li>
-								<li class="menu__item__footer"><a href="">Автопарк</a></li>
-								<li class="menu__item__footer"><a href="">Контакты</a></li>
-							</ul>
-						</nav>
-						<nav class="politic__footer">
-							<ul class="politic__footer__list">
-								<li class="politic__footer__item"><a href="" class="menu__link">Политика конфиденциальности</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="footer__social_account">
-						<ul class="footer__social_account__list">
-							<li class="footer__social_account__item"><a class="social__footer__link ins__footer" href=""></a></li>
-							<li class="footer__social_account__item"><a class="social__footer__link facebook__footer" href=""></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer__bottom">
-					<div class="contacts-phone_footer">
-						<a href="tel:+37378595959">+373 78 59 59 59</a>
-						<div class="footer-top__social">
-							<ul class="social__icons__list">
-								<li class="social__footer__item "><a class="social__footer__link viber__footer" href=""></a></li>
-								<li class="social__footer__item "><a class="social__footer__link whatsap__footer" href=""></a></li>
-								<li class="social__footer__item "><a class="social__footer__link telegram__footer" href=""></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="footer__bottom-author author">
-						<div class="author-text">
-							<div class="author-text__by">develop by</div>
-							<div class="author-text__studio"><a href="https://webmaster.md/" target="_blank">Studio WebMaster, 2022</a></div>
-							<div><a href="https://webmaster.md/" target="_blank">
-									<picture>
-										<source data-srcset="image/icon/logo_webmaster.svg" srcset="img/icons/logo_studia.svg" type="image/webp"><img src="img/icons/logo_studia.svg" alt="">
-									</picture>
-								</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
+                <label for="retour" class="type">
+                  <span class="radio"></span>
+                  Ретур
+                </label>
+              </div>
+            </div>
+            <div class="single-destination">
+              <div class="trip-details destination-details">
+                <div class="form-group from">
+                  <input
+                    class="inputText_from inputText"
+                    name="from"
+                    type="text"
+                    placeholder="Город отправления"
+                  />
+                </div>
+                <div class="form-group from">
+                  <input
+                    class="inputText_to inputText"
+                    name="to"
+                    type="text"
+                    placeholder="Город назначения"
+                  />
+                </div>
+                <div class="form-group from_date">
+                  <input
+                    class="inputText_date inputText"
+                    name="depart"
+                    type="text"
+                    placeholder="Дата"
+                  />
+                </div>
+                <div class="form-group from_men">
+                  <input
+                    class="inputText_men inputText"
+                    name="return"
+                    type="text"
+                    placeholder="1 человек"
+                  />
+                </div>
+                <div class="form-group btn_form-group">
+                  <button class="btn_form" id="bookingDetailsSubmit">
+                    Искать
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="direction__container">
+          <p class="direction_title">Популярные направления из Кишинева</p>
+          <p class="direction_span">
+            Lorem Ipsum is simply dummy text of the printing
+          </p>
+          <div class="direction_cart_item row">
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  80<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source srcset="img/upload/parig.webp" type="image/webp" />
+                    <img src="img/upload/parig.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Париж</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  110<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source srcset="img/upload/nicca.webp" type="image/webp" />
+                    <img src="img/upload/nicca.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Ницца</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  203<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source
+                      srcset="img/upload/monpelie.webp"
+                      type="image/webp" />
+                    <img src="img/upload/monpelie.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Монпелье</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  59<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source srcset="img/upload/nant.webp" type="image/webp" />
+                    <img src="img/upload/nant.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Нант</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  80<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source srcset="img/upload/parig.webp" type="image/webp" />
+                    <img src="img/upload/parig.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Париж</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  110<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source srcset="img/upload/nicca.webp" type="image/webp" />
+                    <img src="img/upload/nicca.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Ницца</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  203<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source
+                      srcset="img/upload/monpelie.webp"
+                      type="image/webp" />
+                    <img src="img/upload/monpelie.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Монпелье</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  59<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source srcset="img/upload/nant.webp" type="image/webp" />
+                    <img src="img/upload/nant.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Нант</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  80<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source srcset="img/upload/parig.webp" type="image/webp" />
+                    <img src="img/upload/parig.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Париж</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  110<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source srcset="img/upload/nicca.webp" type="image/webp" />
+                    <img src="img/upload/nicca.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Ницца</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  203<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source
+                      srcset="img/upload/monpelie.webp"
+                      type="image/webp" />
+                    <img src="img/upload/monpelie.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Монпелье</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="direction_cart col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="img_cart_catalog">
+                <div class="body-price">
+                  59<sup><small>€</small></sup>
+                </div>
+                <a href=""
+                  ><picture
+                    ><source srcset="img/upload/nant.webp" type="image/webp" />
+                    <img src="img/upload/nant.png" alt="" /></picture
+                ></a>
+              </div>
+              <div class="cart_catalog_block">
+                <a href="">
+                  <p class="cart_catalog_desc">Нант</p>
+                </a>
+                <div class="cart_link_btn">
+                  <a href="#" class="cart-link">Заказать</a
+                  ><img src="img/icons/arrow_link.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="all_directions__container">
+          <p class="all_directions_title">Все Направления</p>
+          <div class="all_directions_cnt">
+            <div class="all_directions_list_block">
+              <ul class="all_directions_list">
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ален</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Амберг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Амстердам</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ансбах</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ахен</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Байройт</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бамберг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бельцы</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бельцы</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ватра Дорней</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Брауншвейг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Гумполец</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Карловы Вары</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Биоград-на-Мору</a>
+                </li>
+              </ul>
+              <ul class="all_directions_list">
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ален</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Амберг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Амстердам</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ансбах</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ахен</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Байройт</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бамберг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бельцы</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бельцы</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ватра Дорней</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Брауншвейг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Гумполец</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Карловы Вары</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Биоград-на-Мору</a>
+                </li>
+              </ul>
+              <ul class="all_directions_list">
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ален</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Амберг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Амстердам</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ансбах</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ахен</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Байройт</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бамберг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бельцы</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бельцы</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ватра Дорней</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Брауншвейг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Гумполец</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Карловы Вары</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Биоград-на-Мору</a>
+                </li>
+              </ul>
+              <ul class="all_directions_list">
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ален</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Амберг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Амстердам</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ансбах</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ахен</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Байройт</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бамберг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бельцы</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Бельцы</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Ватра Дорней</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Брауншвейг</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Гумполец</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Карловы Вары</a>
+                </li>
+                <li class="all_directions_item">
+                  <a class="all_directions_tab" href="">Биоград-на-Мору</a>
+                </li>
+              </ul>
+            </div>
+            <div class="all_directions_cart">
+              <picture
+                ><source srcset="img/upload/cart_home.webp" type="image/webp" />
+                <img src="img/upload/cart_home.png" alt=""
+              /></picture>
+            </div>
+          </div>
+          <div class="all_directions_link">
+            <a href="">Показать больше направлений</a
+            ><img src="img/icons/arrow_red.svg" alt="" />
+          </div>
+        </div>
+        <div class="cooperation">
+          <div class="cooperation__container">
+            <div class="cooperation_cnt">
+              <p class="cooperation__title">Преимущества сотрудничества</p>
+              <p class="cooperation__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries,
+              </p>
+            </div>
+            <div class="advantage_cnt">
+              <div class="advantage_block">
+                <img
+                  src="img/icons/cooperation.svg"
+                  alt=""
+                  class="advantage_icon"
+                />
+                <p class="advantage_title">
+                  Уверенность в исправности транспортных средств!
+                </p>
+              </div>
+              <div class="advantage_block">
+                <img
+                  src="img/icons/cooperation.svg"
+                  alt=""
+                  class="advantage_icon"
+                />
+                <p class="advantage_title">
+                  Транспорт всегда приезжает вовремя!
+                </p>
+              </div>
+              <div class="advantage_block">
+                <img
+                  src="img/icons/cooperation.svg"
+                  alt=""
+                  class="advantage_icon"
+                />
+                <p class="advantage_title_last">Четко сформированный маршрут</p>
+              </div>
+            </div>
+            <div class="review_slider swiper bottom-slider">
+              <div class="review-wrapper swiper-wrapper">
+                <div class="bottom__slide swiper-slide review-slide">
+                  <div class="review_photo">
+                    <picture
+                      ><source
+                        srcset="img/upload/review.webp"
+                        type="image/webp" />
+                      <img src="img/upload/review.png" alt=""
+                    /></picture>
+                  </div>
+                  <div class="review_cnt">
+                    <div class="review_title">Виктор Урсу</div>
+                    <div class="review_desc">
+                      Все было отлично! Владимир очень ответственно подошёл к
+                      делу, приехал раньше оговоренного времени на 20 минут по
+                      пробкам из Москвы в область. Машина чистая, комфортная.
+                      Очень благодарен Владимиру, рекомендую.
+                    </div>
+                    <div class="review_btm">
+                      <a href="" class="review_link">Читать весь отзыв</a
+                      ><img src="" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom__slide swiper-slide review-slide">
+                  <div class="review_photo">
+                    <picture
+                      ><source
+                        srcset="img/upload/review.webp"
+                        type="image/webp" />
+                      <img src="img/upload/review.png" alt=""
+                    /></picture>
+                  </div>
+                  <div class="review_cnt">
+                    <div class="review_title">Виктор Урсу</div>
+                    <div class="review_desc">
+                      Все было отлично! Владимир очень ответственно подошёл к
+                      делу, приехал раньше оговоренного времени на 20 минут по
+                      пробкам из Москвы в область. Машина чистая, комфортная.
+                      Очень благодарен Владимиру, рекомендую.
+                    </div>
+                    <div class="review_btm">
+                      <a href="" class="review_link">Читать весь отзыв</a
+                      ><img src="" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom__slide swiper-slide review-slide">
+                  <div class="review_photo">
+                    <picture
+                      ><source
+                        srcset="img/upload/review.webp"
+                        type="image/webp" />
+                      <img src="img/upload/review.png" alt=""
+                    /></picture>
+                  </div>
+                  <div class="review_cnt">
+                    <div class="review_title">Виктор Урсу</div>
+                    <div class="review_desc">
+                      Все было отлично! Владимир очень ответственно подошёл к
+                      делу, приехал раньше оговоренного времени на 20 минут по
+                      пробкам из Москвы в область. Машина чистая, комфортная.
+                      Очень благодарен Владимиру, рекомендую.
+                    </div>
+                    <div class="review_btm">
+                      <a href="" class="review_link">Читать весь отзыв</a
+                      ><img src="" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom__slide swiper-slide review-slide">
+                  <div class="review_photo">
+                    <picture
+                      ><source
+                        srcset="img/upload/review.webp"
+                        type="image/webp" />
+                      <img src="img/upload/review.png" alt=""
+                    /></picture>
+                  </div>
+                  <div class="review_cnt">
+                    <div class="review_title">Виктор Урсу</div>
+                    <div class="review_desc">
+                      Все было отлично! Владимир очень ответственно подошёл к
+                      делу, приехал раньше оговоренного времени на 20 минут по
+                      пробкам из Москвы в область. Машина чистая, комфортная.
+                      Очень благодарен Владимиру, рекомендую.
+                    </div>
+                    <div class="review_btm">
+                      <a href="" class="review_link">Читать весь отзыв</a
+                      ><img src="" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- стрелки -->
+            <div class="review-slider-arrows">
+              <div class="review-slider-arrows__container">
+                <button type="button" class="bottom-slider-prev"></button>
+                <button type="button" class="bottom-slider-next"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__top">
+            <div class="footer__top-contacts contacts">
+              <div class="contacts-address_footer">
+                <p>мун. Кишинэу, бульвар Константин</p>
+                <p>Негруцци, N 7, оф. 255</p>
+              </div>
+            </div>
+            <div class="footer__information-menu">
+              <nav class="menu__body__footer">
+                <ul class="menu__list__footer">
+                  <li class="menu__item__footer"><a href="">О компании </a></li>
+                  <li class="menu__item__footer"><a href="">Направления</a></li>
+                  <li class="menu__item__footer"><a href="">Пассажиры</a></li>
+                  <li class="menu__item__footer"><a href="">Посылки</a></li>
+                  <li class="menu__item__footer"><a href="">Автопарк</a></li>
+                  <li class="menu__item__footer"><a href="">Контакты</a></li>
+                </ul>
+              </nav>
+              <nav class="politic__footer">
+                <ul class="politic__footer__list">
+                  <li class="politic__footer__item">
+                    <a href="" class="menu__link"
+                      >Политика конфиденциальности</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__social_account">
+              <ul class="footer__social_account__list">
+                <li class="footer__social_account__item">
+                  <a class="social__footer__link ins__footer" href=""></a>
+                </li>
+                <li class="footer__social_account__item">
+                  <a class="social__footer__link facebook__footer" href=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="contacts-phone_footer">
+              <a href="tel:+37378595959">+373 78 59 59 59</a>
+              <div class="footer-top__social">
+                <ul class="social__icons__list">
+                  <li class="social__footer__item">
+                    <a class="social__footer__link viber__footer" href=""></a>
+                  </li>
+                  <li class="social__footer__item">
+                    <a class="social__footer__link whatsap__footer" href=""></a>
+                  </li>
+                  <li class="social__footer__item">
+                    <a
+                      class="social__footer__link telegram__footer"
+                      href=""
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__bottom-author author">
+              <div class="author-text">
+                <div class="author-text__by">develop by</div>
+                <div class="author-text__studio">
+                  <a href="https://webmaster.md/" target="_blank"
+                    >Studio WebMaster, 2022</a
+                  >
+                </div>
+                <div>
+                  <a href="https://webmaster.md/" target="_blank">
+                    <picture>
+                      <source
+                        data-srcset="image/icon/logo_webmaster.svg"
+                        srcset="img/icons/logo_studia.svg"
+                        type="image/webp"
+                      />
+                      <img src="img/icons/logo_studia.svg" alt="" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close">Закрыть</button>
@@ -581,162 +982,217 @@
 	</div>
 </div> -->
 
-	<div class="popup_example">
-		<div class="popup_content">
-			<div class="modal-content">
-				<div class="modal_callback">
-					<div class="modal-title-callback">Заказать звонок</div>
-				</div>
-				<form class="form-container">
-					<div class="input_wrapper input_callback">
-						<label class="callback_label" for="fname">Имя</label>
-						<input class="phone_form inputText" type="text" placeholder="Введите имя" id="request_a_call_name" name="firstname" required="">
-					</div>
-					<div class="input_wrapper input_callback">
-						<label class="callback_label" for="phone">Номер телефона</label>
-						<input class="phone_form inputText" type="phone" placeholder="Введите телефон" id="request_a_call_phone" name="phone" required="">
-					</div>
-					<button onclick="send_request_a_call();" id="open-window" type="button" class="contact_form_btn btn_callback">Отправить </button>
-				</form>
+    <div class="popup_example">
+      <div class="popup_content">
+        <div class="modal-content">
+          <div class="modal_callback">
+            <div class="modal-title-callback">Заказать звонок</div>
+          </div>
+          <form class="form-container">
+            <div class="input_wrapper input_callback">
+              <label class="callback_label" for="fname">Имя</label>
+              <input
+                class="phone_form inputText"
+                type="text"
+                placeholder="Введите имя"
+                id="request_a_call_name"
+                name="firstname"
+                required=""
+              />
+            </div>
+            <div class="input_wrapper input_callback">
+              <label class="callback_label" for="phone">Номер телефона</label>
+              <input
+                class="phone_form inputText"
+                type="phone"
+                placeholder="Введите телефон"
+                id="request_a_call_phone"
+                name="phone"
+                required=""
+              />
+            </div>
+            <button
+              onclick="send_request_a_call();"
+              id="open-window"
+              type="button"
+              class="contact_form_btn btn_callback"
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+      <button class="close_popup" onclick="popup()">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.166174 15.8324C0.219247 15.8855 0.282271 15.9277 0.351644 15.9564C0.421017 15.9852 0.495379 16 0.570476 16C0.645574 16 0.719935 15.9852 0.789308 15.9564C0.858682 15.9277 0.921706 15.8855 0.974779 15.8324L7.99792 8.8099L15.0239 15.8324C15.1312 15.9396 15.2766 15.9999 15.4282 15.9999C15.5799 15.9999 15.7253 15.9396 15.8325 15.8324C15.9398 15.7252 16 15.5798 16 15.4281C16 15.2765 15.9398 15.1311 15.8325 15.0239L8.80653 8.00136L15.8297 0.975985C15.9369 0.868767 15.9971 0.723348 15.9971 0.571719C15.9971 0.42009 15.9369 0.274671 15.8297 0.167453C15.7224 0.0602345 15.577 0 15.4254 0C15.2737 0 15.1283 0.0602345 15.0211 0.167453L7.99792 7.19283L0.971921 0.17031C0.862602 0.076699 0.721981 0.0277836 0.578161 0.0333383C0.43434 0.038893 0.297912 0.0985085 0.196139 0.200272C0.0943666 0.302035 0.0347458 0.438451 0.0291906 0.582259C0.0236354 0.726067 0.0725552 0.866675 0.166174 0.975985L7.18932 8.00136L0.166174 15.0267C0.0597406 15.1338 0 15.2786 0 15.4296C0 15.5805 0.0597406 15.7254 0.166174 15.8324Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="popup_overlay" onclick="popup()"></div>
 
-			</div>
-		</div>
-		<button class="close_popup" onclick="popup()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M0.166174 15.8324C0.219247 15.8855 0.282271 15.9277 0.351644 15.9564C0.421017 15.9852 0.495379 16 0.570476 16C0.645574 16 0.719935 15.9852 0.789308 15.9564C0.858682 15.9277 0.921706 15.8855 0.974779 15.8324L7.99792 8.8099L15.0239 15.8324C15.1312 15.9396 15.2766 15.9999 15.4282 15.9999C15.5799 15.9999 15.7253 15.9396 15.8325 15.8324C15.9398 15.7252 16 15.5798 16 15.4281C16 15.2765 15.9398 15.1311 15.8325 15.0239L8.80653 8.00136L15.8297 0.975985C15.9369 0.868767 15.9971 0.723348 15.9971 0.571719C15.9971 0.42009 15.9369 0.274671 15.8297 0.167453C15.7224 0.0602345 15.577 0 15.4254 0C15.2737 0 15.1283 0.0602345 15.0211 0.167453L7.99792 7.19283L0.971921 0.17031C0.862602 0.076699 0.721981 0.0277836 0.578161 0.0333383C0.43434 0.038893 0.297912 0.0985085 0.196139 0.200272C0.0943666 0.302035 0.0347458 0.438451 0.0291906 0.582259C0.0236354 0.726067 0.0725552 0.866675 0.166174 0.975985L7.18932 8.00136L0.166174 15.0267C0.0597406 15.1338 0 15.2786 0 15.4296C0 15.5805 0.0597406 15.7254 0.166174 15.8324Z" fill="black" />
-			</svg>
-		</button>
-	</div>
-	<div class="popup_overlay" onclick="popup()"></div>
+    <div class="route_popup">
+      <div class="route_popup_content">
+        <div class="route_popup_title">
+          <div class="route_popup_from">Кишинев</div>
+          <img
+            class="route_popup_icon"
+            src="img/icons/arrow_popup.svg"
+            alt=""
+          />
+          <div class="route_popup_down">Будапешт</div>
+        </div>
+        <div class="route_popup_number">
+          <div class="route_popup_bus">
+            <div class="popup_bus_title">Автобусы: Маршрут</div>
+            <div class="number_bus">101</div>
+          </div>
+        </div>
+        <div class="route_popup_adress">
+          <div class="departure_address">
+            Адрес отправления
+            <div class="directions_cart_block route_popup_cart">
+              <div class="directions_ctn">
+                <div class="directions_cart">Кишинев,</div>
+                <span class="directions_cart_span">Молдова</span>
+              </div>
+              <div class="cart_hotel">Hotel - Chisinau - str. Negruzzi 7</div>
+            </div>
+          </div>
+          <div class="arrival_address">
+            Адрес прибытия
+            <div class="directions_cart_block route_popup_cart">
+              <div class="directions_ctn">
+                <div class="directions_cart">Братислава,</div>
+                <span class="directions_cart_span">Словакия</span>
+              </div>
+              <div class="cart_hotel">Benzinărie - OMV - Lamač</div>
+            </div>
+          </div>
+        </div>
+        <div class="timetable_route_popup">
+          <div class="timetable_route_title">Дни и время отправления</div>
+          <div class="timetable_route_week">
+            <ul class="timetable_week_item">
+              <li class="timetable_week_list">Понедельник 09:00</li>
+              <li class="timetable_week_list">Вторник 09:00</li>
+              <li class="timetable_week_list">Среда 09:00</li>
+              <li class="timetable_week_list">Четверг 09:00</li>
+              <li class="timetable_week_list">Пятница 09:00</li>
+              <li class="timetable_week_list">Суббота 09:00</li>
+              <li class="timetable_week_list">Воскресенье 09:00</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ticket_price_popup">
+          <div class="price_popup_time">
+            <div class="price_popup_time_title">Время в пути</div>
+            <div class="price_popup_time_cnt">22 часа</div>
+          </div>
+        </div>
+        <div class="ticket_price_popup">
+          <div class="price_popup_time">
+            <div class="price_popup_time_title">Цена билета для взрослых</div>
+            <div class="price_popup_time_cnt">
+              60<sup><small>€</small></sup>
+            </div>
+          </div>
+        </div>
+        <div class="ticket_price_popup">
+          <div class="price_popup_time">
+            <div class="price_popup_time_title">
+              Цена билета для детей (1-12 лет)
+            </div>
+            <div class="price_popup_time_cnt">
+              60<sup><small>€</small></sup>
+            </div>
+          </div>
+        </div>
+        <div class="ticket_price_popup ticket_price_last">
+          <div class="price_popup_time">
+            <div class="price_popup_time_title">Цена билета для младенцев</div>
+            <div class="price_popup_time_cnt">Бесплатно</div>
+          </div>
+        </div>
+        <div class="price__actions-cart">
+          <button type="button" class="price__button-cart" onclick="popup()">
+            Забронировать
+          </button>
+        </div>
+      </div>
+      <button class="close_popup" onclick="route_link()">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.166174 15.8324C0.219247 15.8855 0.282271 15.9277 0.351644 15.9564C0.421017 15.9852 0.495379 16 0.570476 16C0.645574 16 0.719935 15.9852 0.789308 15.9564C0.858682 15.9277 0.921706 15.8855 0.974779 15.8324L7.99792 8.8099L15.0239 15.8324C15.1312 15.9396 15.2766 15.9999 15.4282 15.9999C15.5799 15.9999 15.7253 15.9396 15.8325 15.8324C15.9398 15.7252 16 15.5798 16 15.4281C16 15.2765 15.9398 15.1311 15.8325 15.0239L8.80653 8.00136L15.8297 0.975985C15.9369 0.868767 15.9971 0.723348 15.9971 0.571719C15.9971 0.42009 15.9369 0.274671 15.8297 0.167453C15.7224 0.0602345 15.577 0 15.4254 0C15.2737 0 15.1283 0.0602345 15.0211 0.167453L7.99792 7.19283L0.971921 0.17031C0.862602 0.076699 0.721981 0.0277836 0.578161 0.0333383C0.43434 0.038893 0.297912 0.0985085 0.196139 0.200272C0.0943666 0.302035 0.0347458 0.438451 0.0291906 0.582259C0.0236354 0.726067 0.0725552 0.866675 0.166174 0.975985L7.18932 8.00136L0.166174 15.0267C0.0597406 15.1338 0 15.2786 0 15.4296C0 15.5805 0.0597406 15.7254 0.166174 15.8324Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="popup_overlay" onclick="route_link()"></div>
+    <script src="js/app.min.js?_v=20221021151656"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js?_v=20221021151656"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      function popup() {
+        $(".popup_example").fadeToggle();
+        $(".popup_overlay").fadeToggle();
+      }
+    </script>
+    <script>
+      function route_link() {
+        $(".route_popup").fadeToggle();
+        $(".popup_overlay").fadeToggle();
+      }
+    </script>
+    <script>
+      // (A) SMOOTH SCROLL TO TOP
+      function totop() {
+        window.scroll({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      }
 
-
-
-
-	<div class="route_popup">
-		<div class="route_popup_content">
-			<div class="route_popup_title">
-				<div class="route_popup_from">Кишинев</div>
-				<img class="route_popup_icon" src="img/icons/arrow_popup.svg" alt="">
-				<div class="route_popup_down">Будапешт</div>
-			</div>
-			<div class="route_popup_number">
-				<div class="route_popup_bus">
-					<div class="popup_bus_title">Автобусы: Маршрут</div>
-					<div class="number_bus">101</div>
-				</div>
-			</div>
-			<div class="route_popup_adress">
-				<div class="departure_address">
-					Адрес отправления
-					<div class="directions_cart_block route_popup_cart">
-						<div class="directions_ctn">
-							<div class="directions_cart">Кишинев,</div><span class="directions_cart_span">Молдова</span>
-						</div>
-						<div class="cart_hotel">Hotel - Chisinau - str. Negruzzi 7</div>
-					</div>
-				</div>
-				<div class="arrival_address">
-					Адрес прибытия
-					<div class="directions_cart_block route_popup_cart">
-						<div class="directions_ctn">
-							<div class="directions_cart">Братислава,</div><span class="directions_cart_span">Словакия</span>
-						</div>
-						<div class="cart_hotel">Benzinărie - OMV - Lamač</div>
-					</div>
-				</div>
-			</div>
-			<div class="timetable_route_popup">
-				<div class="timetable_route_title">Дни и время отправления</div>
-				<div class="timetable_route_week">
-					<ul class="timetable_week_item">
-						<li class="timetable_week_list">Понедельник 09:00</li>
-						<li class="timetable_week_list">Вторник 09:00</li>
-						<li class="timetable_week_list">Среда 09:00</li>
-						<li class="timetable_week_list">Четверг 09:00</li>
-						<li class="timetable_week_list">Пятница 09:00</li>
-						<li class="timetable_week_list">Суббота 09:00</li>
-						<li class="timetable_week_list">Воскресенье 09:00</li>
-					</ul>
-				</div>
-			</div>
-			<div class="ticket_price_popup">
-				<div class="price_popup_time">
-					<div class="price_popup_time_title">Время в пути</div>
-					<div class="price_popup_time_cnt">22 часа</div>
-				</div>
-			</div>
-			<div class="ticket_price_popup">
-				<div class="price_popup_time">
-					<div class="price_popup_time_title">Цена билета для взрослых</div>
-					<div class="price_popup_time_cnt">60<sup><small>€</small></sup></div>
-				</div>
-			</div>
-			<div class="ticket_price_popup">
-				<div class="price_popup_time">
-					<div class="price_popup_time_title">Цена билета для детей (1-12 лет)</div>
-					<div class="price_popup_time_cnt">60<sup><small>€</small></sup></div>
-				</div>
-			</div>
-			<div class="ticket_price_popup ticket_price_last">
-				<div class="price_popup_time">
-					<div class="price_popup_time_title">Цена билета для младенцев</div>
-					<div class="price_popup_time_cnt">Бесплатно</div>
-				</div>
-			</div>
-			<div class="price__actions-cart">
-				<button type="button" class="price__button-cart" onclick="popup()">Забронировать</button>
-			</div>
-		</div>
-		<button class="close_popup" onclick="route_link()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M0.166174 15.8324C0.219247 15.8855 0.282271 15.9277 0.351644 15.9564C0.421017 15.9852 0.495379 16 0.570476 16C0.645574 16 0.719935 15.9852 0.789308 15.9564C0.858682 15.9277 0.921706 15.8855 0.974779 15.8324L7.99792 8.8099L15.0239 15.8324C15.1312 15.9396 15.2766 15.9999 15.4282 15.9999C15.5799 15.9999 15.7253 15.9396 15.8325 15.8324C15.9398 15.7252 16 15.5798 16 15.4281C16 15.2765 15.9398 15.1311 15.8325 15.0239L8.80653 8.00136L15.8297 0.975985C15.9369 0.868767 15.9971 0.723348 15.9971 0.571719C15.9971 0.42009 15.9369 0.274671 15.8297 0.167453C15.7224 0.0602345 15.577 0 15.4254 0C15.2737 0 15.1283 0.0602345 15.0211 0.167453L7.99792 7.19283L0.971921 0.17031C0.862602 0.076699 0.721981 0.0277836 0.578161 0.0333383C0.43434 0.038893 0.297912 0.0985085 0.196139 0.200272C0.0943666 0.302035 0.0347458 0.438451 0.0291906 0.582259C0.0236354 0.726067 0.0725552 0.866675 0.166174 0.975985L7.18932 8.00136L0.166174 15.0267C0.0597406 15.1338 0 15.2786 0 15.4296C0 15.5805 0.0597406 15.7254 0.166174 15.8324Z" fill="black" />
-			</svg>
-		</button>
-	</div>
-	<div class="popup_overlay" onclick="route_link()"></div>
-	<script src="js/app.min.js?_v=20221021151656"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js?_v=20221021151656" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script>
-		function popup() {
-			$('.popup_example').fadeToggle();
-			$('.popup_overlay').fadeToggle();
-		}
-	</script>
-	<script>
-		function route_link() {
-			$('.route_popup').fadeToggle();
-			$('.popup_overlay').fadeToggle();
-		}
-	</script>
-	<script>
-		// (A) SMOOTH SCROLL TO TOP
-		function totop() {
-			window.scroll({
-				top: 0,
-				left: 0,
-				behavior: "smooth"
-			});
-		}
-
-		// (B) SHOW/HIDE BUTTON
-		function togtop() {
-			if (window.scrollY >= 100) {
-				document.getElementById("backtop").classList.add("show");
-			} else {
-				document.getElementById("backtop").classList.remove("show");
-			}
-		}
-		window.addEventListener("scroll", togtop);
-		window.addEventListener("resize", togtop);
-	</script>
-	<script>
-		function select_tour(elem) {
-			$('.searching_cart').removeClass('selected');
-			$(elem).closest('.searching_cart').addClass('selected');
-		}
-	</script>
-	<!-- "BACK TO TOP" BUTTON AT BOTTOM -->
-	<div class="scroll_tab">
-		<img src="img/icons/scroll.svg" id="backtop" onclick="totop()" />
-	</div>
-</body>
-
+      // (B) SHOW/HIDE BUTTON
+      function togtop() {
+        if (window.scrollY >= 100) {
+          document.getElementById("backtop").classList.add("show");
+        } else {
+          document.getElementById("backtop").classList.remove("show");
+        }
+      }
+      window.addEventListener("scroll", togtop);
+      window.addEventListener("resize", togtop);
+    </script>
+    <script>
+      function select_tour(elem) {
+        $(".searching_cart").removeClass("selected");
+        $(elem).closest(".searching_cart").addClass("selected");
+      }
+    </script>
+    <!-- "BACK TO TOP" BUTTON AT BOTTOM -->
+    <div class="scroll_tab">
+      <img src="img/icons/scroll.svg" id="backtop" onclick="totop()" />
+    </div>
+  </body>
 </html>
